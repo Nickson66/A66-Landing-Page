@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A66 Malaysia | Trusted Online Casino & Slot Games</title>
+  <meta name="description" content="A66 is a trusted online casino platform in Malaysia. Play slots, live casino and sports betting with fast deposits, quick withdrawals and 24/7 support.">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #eeeeee; background: #191818; }
+    .wrap { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
+    header { border-bottom: 1px solid #493529; padding: 14px 0; position: sticky; top: 0; background: #191818; z-index: 10; }
+    .header-row { display: flex; justify-content: space-between; align-items: center; }
+    .logo img { height: 52px; }
+    nav a { margin-left: 22px; text-decoration: none; color: #fff; font-size: 13px; }
+    .btn { background: #ff5000; color: #fff; padding: 10px 18px; border-radius: 3px; text-decoration: none; font-size: 13px; }
+    .hero { padding: 72px 0 48px; background: linear-gradient(180deg, #141313 0%, #26201d 100%); }
+    .hero-grid { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 40px; align-items: center; }
+    .hero h1 { font-size: 38px; font-weight: 650; line-height: 1.15; letter-spacing: -0.5px; }
+    .hero p { margin: 16px 0 24px; color: #eeeeee; font-size: 16px; }
+    .promo-box { background: #242222; height: 220px; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 14px; border: 1px dashed #ddd; }
+    .section { padding: 56px 0; }
+    .section h2 { font-size: 24px; font-weight: 600; margin-bottom: 6px; }
+    .lead { color: #ccc; margin-bottom: 28px; }
+    .three { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .block { border: 1px solid #493529; padding: 24px; border-radius: 8px; background: #191818; transition: box-shadow 0.2s; }
+    .block:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.06); }
+    .block h3 { font-size: 15px; margin-bottom: 6px; color: #ff5000; }
+    .block p { font-size: 14px; color: #fff; }
+    .review-wrap { overflow: hidden; margin: 32px 0; background: #242222; padding: 24px 0; border-radius: 8px; }
+    .review-track { display: flex; gap: 16px; }
+    .review-card { width:280px; min-width:280px; max-width:280px; overflow-wrap:anywhere; background: #191818; border-radius: 8px; padding: 16px; flex-shrink: 0; }
+    .review-card .name { font-weight: 600; font-size: 14px; color: #fff; }
+    .review-card .stars { color: #ff5000; font-size: 12px; margin: 4px 0; }
+    .review-card p { font-size: 13px; color: #fff; line-height: 1.6; }
+    @keyframes scroll { 
+      0% { transform: translateX(0); } 
+      100% { transform: translateX(calc(-100% / 2)); } 
+    }
+    .stat { text-align: center; }
+    .stat-row { display: flex; gap: 40px; justify-content: center; margin: 32px 0; flex-wrap: wrap; }
+    .stat { text-align: center; }
+    .stat-num { font-size: 28px; font-weight: 600; color: #ff5000; }
+    .stat-label { font-size: 13px; color: #ccc; }
+    .stat-label { font-size: 13px; color: #ccc; }
+    .wide-promo { background: #242222; height: 160px; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #999; margin: 32px 0; }
+    .split { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-top: 20px; }
+    .faq-item { border-bottom: 1px solid #493529; }
+    .faq-item h3 { padding: 16px 0; cursor: pointer; font-size: 15px; font-weight: 500; display: flex; justify-content: space-between; }
+    .faq-item p { display: none; padding-bottom: 14px; color: #d3a344; font-size: 14px; }
+    .faq-item.active p { display: block; }
+    footer { border-top: 1px solid #eee; padding: 28px 0; text-align: center; color: #aaaaaa; font-size: 13px; }
+    @media (max-width: 800px) { .hero-grid, .three, .split { grid-template-columns: 1fr; } }
+  
+/* A66 shared brand details; layout and interactions remain page-specific. */
+html { background:#191818; color-scheme:dark; }
+body { background:#191818; color:#eee; }
+header { background:linear-gradient(110deg,#090909,#292726); border-bottom:2px solid #ff5000; }
+.logo { flex-shrink:0; }
+.logo img { width:116px; height:52px; object-fit:contain; display:block; }
+.logo a { display:inline-block; }
+a { color:#ff792f; }
+a.btn, nav a.btn { display:inline-block; background:#ff5000; color:#fff; font-weight:600; border:1px solid #ff6a20; }
+a.btn:hover { background:#d84100; color:#fff; }
+a:focus-visible, [tabindex]:focus-visible { outline:2px solid #d3a344; outline-offset:4px; }
+.hero { background:linear-gradient(135deg,#141313,#30231b); }
+.hero h1 { color:#f5f2ee; }
+.hero-banner { background:linear-gradient(135deg,#3b2115,#8f350d); border-bottom:1px solid #d3a344; }
+.card, .block, .review-card { background:#211f1e; }
+.review-card .stars { color:#d3a344; }
+.tip { border-left-color:#d3a344; }
+footer { background:#111; border-top:1px solid #493529; color:#aaa; }
+.promo-box, .wide-promo { overflow:hidden; }
+img { max-width:100%; }
+@media(max-width:768px) {
+ .header-row,.header-inner { flex-wrap:wrap; justify-content:center; gap:14px; }
+ nav { display:flex; flex-wrap:wrap; justify-content:center; gap:12px; align-items:center; }
+ nav a { margin-left:0; }
+ .hero { padding-top:40px; }
+ .hero h1 { font-size:clamp(26px,6vw,36px); }
+ .hero-inner > * { min-width:0; max-width:100%; }
+ .card { max-width:100%; }
+ .content { padding:24px 18px; margin-left:12px; margin-right:12px; }
+ table { display:block; overflow-x:auto; }
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="wrap header-row">
+    <div class="logo"><img src="assets/a66-logo.svg" alt="A66"></div>
+    <nav>
+      <a href="index.html" style="color:#ff5000;">Home</a>
+      <a href="about.html">About</a>
+      <a href="slots.html">Slots</a>
+      <a href="live-casino.html">Live</a>
+      <a href="sportsbook.html">Sports</a>
+      <a href="#faq">FAQ</a>
+      <a href="blogger.html">Blogger</a>
+      <a href="https://a66.social/register" class="btn">Register</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p style="color:#ff5000; font-size:13px; letter-spacing:1px;">A66 MALAYSIA</p>
+      <h1>A66 | Trusted Online Casino & Slot Games</h1>
+      <p>Slots, live casino, and sports betting in one account. Fast deposits, quick withdrawals, and support available around the clock.</p>
+      <a href="https://a66.social/register" class="btn">Join A66</a>
+    </div>
+    <div class="promo-box" style="background:none; border:none; padding:0; height:auto;">
+      <img src="assets/a66-hero.svg" alt="A66" style="width:100%; height:auto; border-radius:8px; display:block;">
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:#211f1e;">
+  <div class="wrap">
+    <h2>A66 | Why Players Choose A66</h2>
+    <p class="lead">Straightforward access, established providers, and responsive support.</p>
+    <div class="three">
+      <div class="block"><h3>Fast Withdrawals</h3><p>Withdrawals are typically processed quickly under normal conditions.</p></div>
+      <div class="block"><h3>24/7 Support</h3><p>Live chat is available for deposit, bonus, and account questions.</p></div>
+      <div class="block"><h3>Fair Play</h3><p>Games are supplied by licensed providers. Outcomes are determined by their systems.</p></div>
+    </div>
+    <div class="stat-row">
+      <div class="stat"><div class="stat-num">24/7</div><div class="stat-label">Support</div></div>
+      <div class="stat"><div class="stat-num">Browser</div><div class="stat-label">No App Needed</div></div>
+      <div class="stat"><div class="stat-num">MYR</div><div class="stat-label">Local Payments</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="wide-promo" style="background:none; height:auto; padding:0;">
+    <img src="assets/a66-banner.svg" alt="A66 Promo" style="width:100%; height:auto; border-radius:8px; display:block;">
+  </div>
+</div>
+
+<section class="section">
+  <div class="wrap">
+    <h2 style="color:#fff;">A66 | Game Categories</h2>
+    <p class="lead">One account covers slots, live tables, and sports.</p>
+    <div class="split">
+      <div>
+        <h3 style="margin-bottom:8px; color:#fff;">Slots</h3>
+        <p style="color:#ccc; font-size:14px;">Video slots, classic titles, and Asian-themed games from multiple providers. All accessible in the browser.</p>
+      </div>
+      <div>
+        <h3 style="margin-bottom:8px; color:#fff;">Live Casino</h3>
+        <p style="color:#ccc; font-size:14px;">Baccarat, roulette, blackjack, and other tables streamed with real dealers.</p>
+      </div>
+    </div>
+    <div class="split" style="margin-top:20px;">
+      <div>
+        <h3 style="margin-bottom:8px; color:#fff;">Sportsbook</h3>
+        <p style="color:#ccc; font-size:14px;">Pre-match and live betting on football, basketball, and other events.</p>
+      </div>
+      <div>
+        <h3 style="margin-bottom:8px; color:#fff;">Mobile Access</h3>
+        <p style="color:#ccc; font-size:14px;">No app required. Play through the mobile browser on Android or iOS.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:#211f1e;">
+  <div class="wrap">
+    <h2 style="text-align:center;">A66 | Player Reviews</h2>
+    <p style="text-align:center; color:#aaa; font-size:13px; margin-top:10px;">Illustrative examples only. Names and comments are fictional, not verified customer testimonials.</p>
+    <div class="review-wrap">
+      <div class="review-track" id="reviews">
+        <div class="review-card"><div class="name">Faris H***</div><div style="color:#d3a344; font-size:11px; margin:4px 0;">SAMPLE PROFILE</div><p>Susunan kategori yang jelas membantu saya cari bahagian yang saya mahu.</p></div>
+        <div class="review-card"><div class="name">Alyssa T***</div><div style="color:#d3a344; font-size:11px; margin:4px 0;">SAMPLE PROFILE</div><p>I like a lobby that keeps the game categories easy to scan.</p></div>
+        <div class="review-card"><div class="name">俊杰 L***</div><div style="color:#d3a344; font-size:11px; margin:4px 0;">SAMPLE PROFILE</div><p>我喜欢先看游戏说明，再决定要不要尝试。</p></div>
+        <div class="review-card"><div class="name">Nabil Z***</div><div style="color:#d3a344; font-size:11px; margin:4px 0;">SAMPLE PROFILE</div><p>Lebih senang bila pautan utama mudah dicari pada skrin telefon.</p></div>
+        <div class="review-card"><div class="name">Kavitha R***</div><div style="color:#d3a344; font-size:11px; margin:4px 0;">SAMPLE PROFILE</div><p>Having the game rules close at hand makes browsing more useful.</p></div>
+        <div class="review-card"><div class="name">Jia En W***</div><div style="color:#d3a344; font-size:11px; margin:4px 0;">SAMPLE PROFILE</div><p>橙色按钮配深色背景，页面重点比较容易看清楚。</p></div>
+        <div class="review-card"><div class="name">Syazwani B***</div><div style="color:#d3a344; font-size:11px; margin:4px 0;">SAMPLE PROFILE</div><p>Saya utamakan maklumat syarat yang boleh dibaca sebelum mendaftar.</p></div>
+        <div class="review-card"><div class="name">Owen G***</div><div style="color:#d3a344; font-size:11px; margin:4px 0;">SAMPLE PROFILE</div><p>A simple menu matters more to me than a crowded homepage.</p></div>
+        <div class="review-card"><div class="name">欣怡 C***</div><div style="color:#d3a344; font-size:11px; margin:4px 0;">SAMPLE PROFILE</div><p>我会先了解投注规则，也会为自己设定娱乐预算。</p></div>
+        <div class="review-card"><div class="name">Arvind P***</div><div style="color:#d3a344; font-size:11px; margin:4px 0;">SAMPLE PROFILE</div><p>I prefer checking the available categories before choosing a game.</p></div>
+        <div class="review-card"><div class="name">Hana D***</div><div style="color:#d3a344; font-size:11px; margin:4px 0;">SAMPLE PROFILE</div><p>Panduan ringkas berguna untuk faham perbezaan antara kategori permainan.</p></div>
+        <div class="review-card"><div class="name">Yong Sheng K***</div><div style="color:#d3a344; font-size:11px; margin:4px 0;">SAMPLE PROFILE</div><p>比起复杂的页面，我更喜欢清楚的分类和导航。</p></div>
+        <div class="review-card"><div class="name">Zafran E***</div><div style="color:#d3a344; font-size:11px; margin:4px 0;">SAMPLE PROFILE</div><p>Bagi saya, maklumat akaun dan syarat perlu mudah difahami.</p></div>
+        <div class="review-card"><div class="name">Serena J***</div><div style="color:#d3a344; font-size:11px; margin:4px 0;">SAMPLE PROFILE</div><p>The darker colour scheme suits how I prefer to browse on my phone.</p></div>
+        <div class="review-card"><div class="name">Pei Xuan N***</div><div style="color:#d3a344; font-size:11px; margin:4px 0;">SAMPLE PROFILE</div><p>阅读条款时，文字清晰和分段简洁对我很重要。</p></div>
+        <div class="review-card"><div class="name">Devika V***</div><div style="color:#d3a344; font-size:11px; margin:4px 0;">SAMPLE PROFILE</div><p>I look for clear information about account verification before getting started.</p></div>
+        <div class="review-card"><div class="name">Izzati F***</div><div style="color:#d3a344; font-size:11px; margin:4px 0;">SAMPLE PROFILE</div><p>Saya suka semak peraturan permainan dan tetapkan had masa dahulu.</p></div>
+        <div class="review-card"><div class="name">Cedric U***</div><div style="color:#d3a344; font-size:11px; margin:4px 0;">SAMPLE PROFILE</div><p>Keeping slots, live tables and sports in distinct sections helps navigation.</p></div>
+        <div class="review-card"><div class="name">思涵 Y***</div><div style="color:#d3a344; font-size:11px; margin:4px 0;">SAMPLE PROFILE</div><p>我比较重视游戏规则、账户说明和负责任娱乐的信息。</p></div>
+        <div class="review-card"><div class="name">Luqman Q***</div><div style="color:#d3a344; font-size:11px; margin:4px 0;">SAMPLE PROFILE</div><p>Paparan yang kemas memudahkan saya baca panduan tanpa rasa berserabut.</p></div>
+        <div class="review-card"><div class="name">Amelia O***</div><div style="color:#d3a344; font-size:11px; margin:4px 0;">SAMPLE PROFILE</div><p>I prefer reading the terms carefully rather than relying on a headline offer.</p></div>
+        <div class="review-card"><div class="name">Wei Hong D***</div><div style="color:#d3a344; font-size:11px; margin:4px 0;">SAMPLE PROFILE</div><p>手机页面的按钮间距和文字大小，是我会注意的细节。</p></div>
+        <div class="review-card"><div class="name">Roshini A***</div><div style="color:#d3a344; font-size:11px; margin:4px 0;">SAMPLE PROFILE</div><p>A readable FAQ is useful when I want to understand the basics first.</p></div>
+        <div class="review-card"><div class="name">Hakimi S***</div><div style="color:#d3a344; font-size:11px; margin:4px 0;">SAMPLE PROFILE</div><p>Saya pilih untuk berehat selepas tempoh yang saya tetapkan sendiri.</p></div>
+        <div class="review-card"><div class="name">Nicole B***</div><div style="color:#d3a344; font-size:11px; margin:4px 0;">SAMPLE PROFILE</div><p>Clear headings help me jump to the information I actually need.</p></div>
+        <div class="review-card"><div class="name">志豪 F***</div><div style="color:#d3a344; font-size:11px; margin:4px 0;">SAMPLE PROFILE</div><p>我会留意验证要求和交易说明，再决定下一步。</p></div>
+        <div class="review-card"><div class="name">Danish I***</div><div style="color:#d3a344; font-size:11px; margin:4px 0;">SAMPLE PROFILE</div><p>Penting untuk saya faham syarat promosi sebelum memilih apa-apa tawaran.</p></div>
+        <div class="review-card"><div class="name">Vanessa M***</div><div style="color:#d3a344; font-size:11px; margin:4px 0;">SAMPLE PROFILE</div><p>I appreciate having responsible play information alongside the game guides.</p></div>
+        <div class="review-card"><div class="name">丽雯 T***</div><div style="color:#d3a344; font-size:11px; margin:4px 0;">SAMPLE PROFILE</div><p>不同游戏有不同规则，我习惯先看说明而不是直接开始。</p></div>
+        <div class="review-card"><div class="name">Pravin C***</div><div style="color:#d3a344; font-size:11px; margin:4px 0;">SAMPLE PROFILE</div><p>For me, an organised layout makes comparing the categories much easier.</p></div>
+        <div class="review-card"><div class="name">Maisarah L***</div><div style="color:#d3a344; font-size:11px; margin:4px 0;">SAMPLE PROFILE</div><p>Menu yang ringkas dan tajuk yang jelas lebih selesa untuk dibaca.</p></div>
+        <div class="review-card"><div class="name">Ethan R***</div><div style="color:#d3a344; font-size:11px; margin:4px 0;">SAMPLE PROFILE</div><p>I set a personal budget first and treat games as entertainment.</p></div>
+        <div class="review-card"><div class="name">凯文 Z***</div><div style="color:#d3a344; font-size:11px; margin:4px 0;">SAMPLE PROFILE</div><p>深色页面搭配橙色重点，整体风格比较统一。</p></div>
+        <div class="review-card"><div class="name">Shalini H***</div><div style="color:#d3a344; font-size:11px; margin:4px 0;">SAMPLE PROFILE</div><p>I check the help information before entering any account details.</p></div>
+        <div class="review-card"><div class="name">Azriel N***</div><div style="color:#d3a344; font-size:11px; margin:4px 0;">SAMPLE PROFILE</div><p>Saya lebih suka baca maklumat dengan tenang dan elakkan keputusan terburu-buru.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:#211f1e;">
+  <div class="wrap" style="max-width:800px;">
+    <h2>A66 | About the Platform</h2>
+    <p style="margin-bottom:14px;">A66 is structured as a single-account platform. Players register once and gain access to slots, live casino tables, and sports betting markets without maintaining separate wallets or completing additional registration steps for each category. Deposits are credited to a central balance that can be used across all available games.</p>
+    <p style="margin-bottom:14px;">The platform operates through a web browser. No application download is required for desktop or mobile access. This approach reduces installation barriers and allows players to move between devices using the same credentials. Session continuity depends on the individual game provider. In most cases, closing a browser tab ends the active session, and any incomplete bonus feature should be resolved before departure.</p>
+    <p style="margin-bottom:14px;">Game content is supplied by third-party providers. A66 does not develop its own slot titles or live dealer studios. Outcomes are determined by the systems operated by those providers. The platform's role is to aggregate access, process transactions, and provide customer support. Players who wish to understand the mathematical characteristics of a particular title should consult the paytable and rules published within that game.</p>
+    <h3 style="margin:20px 0 8px; font-size:16px;">Transactions</h3>
+    <p style="margin-bottom:14px;">Deposits are processed through the methods listed in the cashier. Available options typically include local bank transfers and e-wallets commonly used in Malaysia. Processing times vary by method. E-wallet deposits are generally faster than bank transfers. Withdrawal requests are subject to account verification. Players who have not previously withdrawn should expect that identity documents may be requested before the first payout is released.</p>
+    <p style="margin-bottom:14px;">Withdrawal processing times depend on the method selected and on the completion of verification. Under normal conditions, approved withdrawals are completed within a short period. Delays can occur when additional review is required or when the selected method experiences processing constraints. Players can check the status of a pending withdrawal in the account transaction history.</p>
+    <h3 style="margin:20px 0 8px; font-size:16px;">Support and Account Management</h3>
+    <p style="margin-bottom:14px;">Customer support is available through live chat. The team handles questions related to deposits, withdrawals, bonus terms, and account access. Response times vary according to volume. For issues that require investigation, such as a disputed game result or a delayed transaction, players should provide the relevant timestamps and reference numbers when contacting support.</p>
+    <p>Account settings allow players to update contact details, review transaction history, and manage security options. Two-factor authentication, where available, adds an additional verification step at login. Players are responsible for maintaining the confidentiality of their login credentials. Unauthorised access should be reported to support immediately.</p>
+    <h3 style="margin:20px 0 8px; font-size:16px;">Game Providers and Fairness</h3>
+    <p style="margin-bottom:14px;">Slot and live casino content is supplied by independent providers. These providers operate their own random number generators and studio environments. A66 does not alter game outcomes or adjust return percentages. Players who wish to verify the characteristics of a title should consult the information published by the provider within the game client.</p>
+    <p style="margin-bottom:14px;">Live dealer games are streamed from studios operated by the providers. The physical dealing, spinning, or rolling is observable in the video feed. Results correspond to the physical outcome. In the event of a technical interruption, the provider's protocol determines whether a round is completed, voided, or resumed. Players should reconnect and check the game state before assuming a round has been lost.</p>
+    <h3 style="margin:20px 0 8px; font-size:16px;">Promotions and Wagering</h3>
+    <p style="margin-bottom:14px;">Promotional offers are listed in the promotions area. Each offer includes terms that define eligibility, the deposit required, the wagering multiple, game contribution rates, and the expiry period. Slot games typically contribute at a higher rate toward wagering requirements than table games or sports bets. Players should confirm the contribution rate of their preferred games before accepting a bonus.</p>
+    <p>Bonus funds and winnings derived from bonus play are subject to the stated requirements. Withdrawal of these amounts is available only after the requirements are met. Unused bonus funds may be forfeited if the expiry date passes or if the player requests a withdrawal before completion. Support can provide the current status of an active bonus upon request.</p>
+  </div>
+</section>
+
+<section class="section" style="background:#211f1e;" id="faq">
+  <div class="wrap">
+    <h2>A66 | Frequently Asked Questions</h2>
+    <div class="faq-item"><h3>Is A66 a trusted platform? <span>+</span></h3><p>A66 uses standard encryption and works with established game providers.</p></div>
+    <div class="faq-item"><h3>How do I claim a bonus? <span>+</span></h3><p>Register, deposit, and select the promotion in the cashier or promotions area.</p></div>
+    <div class="faq-item"><h3>How long do withdrawals take? <span>+</span></h3><p>Most withdrawals are processed within a short period after approval.</p></div>
+    <div class="faq-item"><h3>Can I play on mobile? <span>+</span></h3><p>Yes. The site works in mobile browsers. No download is required.</p></div>
+    <div class="faq-item"><h3>What payment methods are accepted? <span>+</span></h3><p>Local bank transfers and popular e-wallets are supported. Available methods are displayed in the cashier.</p></div>
+    <div class="faq-item"><h3>Is there a minimum deposit? <span>+</span></h3><p>Minimum amounts vary by method and are shown at the point of deposit.</p></div>
+    <div class="faq-item"><h3>How do I set deposit limits? <span>+</span></h3><p>Deposit limits can be configured in the responsible gaming section of your account settings.</p></div>
+    <div class="faq-item"><h3>What is self-exclusion? <span>+</span></h3><p>Self-exclusion blocks access to your account for a period you specify. Contact support to activate this option.</p></div>
+    <div class="faq-item"><h3>Are games fair? <span>+</span></h3><p>Games are supplied by licensed providers and use random number generation. Outcomes are determined by the provider systems.</p></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">© 2019-2026 A66</div>
+</footer>
+
+<script>
+const reviews = [
+  {
+    "name": "Faris H***",
+    "text": "Susunan kategori yang jelas membantu saya cari bahagian yang saya mahu."
+  },
+  {
+    "name": "Alyssa T***",
+    "text": "I like a lobby that keeps the game categories easy to scan."
+  },
+  {
+    "name": "俊杰 L***",
+    "text": "我喜欢先看游戏说明，再决定要不要尝试。"
+  },
+  {
+    "name": "Nabil Z***",
+    "text": "Lebih senang bila pautan utama mudah dicari pada skrin telefon."
+  },
+  {
+    "name": "Kavitha R***",
+    "text": "Having the game rules close at hand makes browsing more useful."
+  },
+  {
+    "name": "Jia En W***",
+    "text": "橙色按钮配深色背景，页面重点比较容易看清楚。"
+  },
+  {
+    "name": "Syazwani B***",
+    "text": "Saya utamakan maklumat syarat yang boleh dibaca sebelum mendaftar."
+  },
+  {
+    "name": "Owen G***",
+    "text": "A simple menu matters more to me than a crowded homepage."
+  },
+  {
+    "name": "欣怡 C***",
+    "text": "我会先了解投注规则，也会为自己设定娱乐预算。"
+  },
+  {
+    "name": "Arvind P***",
+    "text": "I prefer checking the available categories before choosing a game."
+  },
+  {
+    "name": "Hana D***",
+    "text": "Panduan ringkas berguna untuk faham perbezaan antara kategori permainan."
+  },
+  {
+    "name": "Yong Sheng K***",
+    "text": "比起复杂的页面，我更喜欢清楚的分类和导航。"
+  },
+  {
+    "name": "Zafran E***",
+    "text": "Bagi saya, maklumat akaun dan syarat perlu mudah difahami."
+  },
+  {
+    "name": "Serena J***",
+    "text": "The darker colour scheme suits how I prefer to browse on my phone."
+  },
+  {
+    "name": "Pei Xuan N***",
+    "text": "阅读条款时，文字清晰和分段简洁对我很重要。"
+  },
+  {
+    "name": "Devika V***",
+    "text": "I look for clear information about account verification before getting started."
+  },
+  {
+    "name": "Izzati F***",
+    "text": "Saya suka semak peraturan permainan dan tetapkan had masa dahulu."
+  },
+  {
+    "name": "Cedric U***",
+    "text": "Keeping slots, live tables and sports in distinct sections helps navigation."
+  },
+  {
+    "name": "思涵 Y***",
+    "text": "我比较重视游戏规则、账户说明和负责任娱乐的信息。"
+  },
+  {
+    "name": "Luqman Q***",
+    "text": "Paparan yang kemas memudahkan saya baca panduan tanpa rasa berserabut."
+  },
+  {
+    "name": "Amelia O***",
+    "text": "I prefer reading the terms carefully rather than relying on a headline offer."
+  },
+  {
+    "name": "Wei Hong D***",
+    "text": "手机页面的按钮间距和文字大小，是我会注意的细节。"
+  },
+  {
+    "name": "Roshini A***",
+    "text": "A readable FAQ is useful when I want to understand the basics first."
+  },
+  {
+    "name": "Hakimi S***",
+    "text": "Saya pilih untuk berehat selepas tempoh yang saya tetapkan sendiri."
+  },
+  {
+    "name": "Nicole B***",
+    "text": "Clear headings help me jump to the information I actually need."
+  },
+  {
+    "name": "志豪 F***",
+    "text": "我会留意验证要求和交易说明，再决定下一步。"
+  },
+  {
+    "name": "Danish I***",
+    "text": "Penting untuk saya faham syarat promosi sebelum memilih apa-apa tawaran."
+  },
+  {
+    "name": "Vanessa M***",
+    "text": "I appreciate having responsible play information alongside the game guides."
+  },
+  {
+    "name": "丽雯 T***",
+    "text": "不同游戏有不同规则，我习惯先看说明而不是直接开始。"
+  },
+  {
+    "name": "Pravin C***",
+    "text": "For me, an organised layout makes comparing the categories much easier."
+  },
+  {
+    "name": "Maisarah L***",
+    "text": "Menu yang ringkas dan tajuk yang jelas lebih selesa untuk dibaca."
+  },
+  {
+    "name": "Ethan R***",
+    "text": "I set a personal budget first and treat games as entertainment."
+  },
+  {
+    "name": "凯文 Z***",
+    "text": "深色页面搭配橙色重点，整体风格比较统一。"
+  },
+  {
+    "name": "Shalini H***",
+    "text": "I check the help information before entering any account details."
+  },
+  {
+    "name": "Azriel N***",
+    "text": "Saya lebih suka baca maklumat dengan tenang dan elakkan keputusan terburu-buru."
+  }
+];
+
+const track = document.getElementById('reviews');
+let html = '';
+reviews.forEach((r, i) => {
+  html += `<div class="review-card"><div class="name">${r.name}</div><div style="color:#d3a344; font-size:11px; margin:4px 0;">SAMPLE PROFILE</div><p>${r.text}</p></div>`;
+});
+track.innerHTML = html + html;
+const cardWidth = 296;
+const totalWidth = reviews.length * cardWidth;
+let pos = 0;
+function animate() {
+  pos -= 0.5;
+  if (pos <= -totalWidth) pos = 0;
+  track.style.transform = `translateX(${pos}px)`;
+  requestAnimationFrame(animate);
+}
+animate();
+document.querySelectorAll('.faq-item h3').forEach(h => {
+  h.addEventListener('click', () => h.parentElement.classList.toggle('active'));
+});
+</script>
+</body>
+</html>

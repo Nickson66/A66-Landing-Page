@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A66 Sportsbook | Pre-Match & Live Betting</title>
+  <meta name="description" content="Bet on sports at A66. Pre-match and live betting on football, basketball and more.">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #fff; background: #191818; }
+    .wrap { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
+    header { border-bottom: 1px solid #493529; padding: 14px 0; position: sticky; top: 0; background: #191818; z-index: 10; }
+    .header-row { display: flex; justify-content: space-between; align-items: center; }
+    .logo img { height: 52px; }
+    nav a { margin-left: 22px; text-decoration: none; color: #eee; font-size: 13px; }
+    .btn { background: #ff5000; color: #fff; padding: 10px 18px; border-radius: 3px; text-decoration: none; font-size: 13px; }
+    h1 { font-size: 28px; font-weight: 600; margin: 32px 0 20px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px; margin-bottom: 40px; }
+    .card { border: 1px solid #493529; border-radius: 4px; overflow: hidden; }
+    .card-img { height: 140px; background: linear-gradient(135deg, #ff5000, #d3a344); }
+    .card-body { padding: 14px; }
+    .card h3 { font-size: 15px; color: #ff5000; margin-bottom: 4px; }
+    .card p { font-size: 13px; color: #ccc; margin-bottom: 10px; }
+    .card .btn { font-size: 12px; padding: 6px 12px; }
+    .content { max-width: 800px; line-height: 1.8; color: #ddd; }
+    .content h2 { color: #ff5000; margin: 28px 0 10px; font-size: 20px; }
+    .content h3 { margin: 20px 0 8px; font-size: 16px; }
+    footer { border-top: 1px solid #eee; padding: 24px 0; text-align: center; color: #aaaaaa; font-size: 13px; margin-top: 40px; }
+  
+/* A66 shared brand details; layout and interactions remain page-specific. */
+html { background:#191818; color-scheme:dark; }
+body { background:#191818; color:#eee; }
+header { background:linear-gradient(110deg,#090909,#292726); border-bottom:2px solid #ff5000; }
+.logo { flex-shrink:0; }
+.logo img { width:116px; height:52px; object-fit:contain; display:block; }
+.logo a { display:inline-block; }
+a { color:#ff792f; }
+a.btn, nav a.btn { display:inline-block; background:#ff5000; color:#fff; font-weight:600; border:1px solid #ff6a20; }
+a.btn:hover { background:#d84100; color:#fff; }
+a:focus-visible, [tabindex]:focus-visible { outline:2px solid #d3a344; outline-offset:4px; }
+.hero { background:linear-gradient(135deg,#141313,#30231b); }
+.hero h1 { color:#f5f2ee; }
+.hero-banner { background:linear-gradient(135deg,#3b2115,#8f350d); border-bottom:1px solid #d3a344; }
+.card, .block, .review-card { background:#211f1e; }
+.review-card .stars { color:#d3a344; }
+.tip { border-left-color:#d3a344; }
+footer { background:#111; border-top:1px solid #493529; color:#aaa; }
+.promo-box, .wide-promo { overflow:hidden; }
+img { max-width:100%; }
+@media(max-width:768px) {
+ .header-row,.header-inner { flex-wrap:wrap; justify-content:center; gap:14px; }
+ nav { display:flex; flex-wrap:wrap; justify-content:center; gap:12px; align-items:center; }
+ nav a { margin-left:0; }
+ .hero { padding-top:40px; }
+ .hero h1 { font-size:clamp(26px,6vw,36px); }
+ .hero-inner > * { min-width:0; max-width:100%; }
+ .card { max-width:100%; }
+ .content { padding:24px 18px; margin-left:12px; margin-right:12px; }
+ table { display:block; overflow-x:auto; }
+}
+
+  </style>
+<link rel="stylesheet" href="assets/a66-explore.css">
+</head>
+<body>
+<header>
+  <div class="wrap header-row">
+    <div class="logo"><img src="assets/a66-logo.svg" alt="A66"></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="slots.html">Slots</a>
+      <a href="live-casino.html">Live</a>
+      <a href="sportsbook.html" style="color:#ff5000;">Sports</a>
+      <a href="blogger.html">Blogger</a>
+      <a href="https://a66.social/register" class="btn">Register</a>
+    </nav>
+  </div>
+</header>
+<main class="explore"><section class="page-heading"><h1>Sportsbook</h1><p>Understand football, live betting and other sports markets. Select Read More for market explanations and settlement guidance.</p></section><section id="collection" aria-label="Sportsbook categories"><div class="collection-grid"><article class="game-card"><div class="game-card-body"><h3>Football</h3><p>Pre-match and live markets.</p><button type="button" class="read-more" data-modal="detail-football" aria-haspopup="dialog" aria-controls="detail-football" aria-label="Read more about Football">Read More <span aria-hidden="true">↗</span></button></div></article>
+<article class="game-card"><div class="game-card-body"><h3>Live Betting</h3><p>In-play wagering with updating odds.</p><button type="button" class="read-more" data-modal="detail-live-betting" aria-haspopup="dialog" aria-controls="detail-live-betting" aria-label="Read more about Live Betting">Read More <span aria-hidden="true">↗</span></button></div></article>
+<article class="game-card"><div class="game-card-body"><h3>Other Sports</h3><p>Basketball, badminton and more.</p><button type="button" class="read-more" data-modal="detail-other-sports" aria-haspopup="dialog" aria-controls="detail-other-sports" aria-label="Read more about Other Sports">Read More <span aria-hidden="true">↗</span></button></div></article></div></section><section class="library" aria-labelledby="library-title"><span class="eyebrow">THE KNOWLEDGE LIBRARY</span><h2 class="library-head" id="library-title">Go a little deeper.</h2><p>Your original guides, organised into topics. Select a heading to read more.</p><details><summary>A66 Sportsbook</summary><div>
+    <p>The sportsbook section of A66 lists markets on sporting events, principally football, basketball, badminton, and other competitions that attract significant interest. Betting is offered in two principal formats: pre-match wagering, which is available before an event begins, and live betting, which operates while the event is in progress. The range of markets on a given fixture depends on the competition and the coverage provided. Major events typically carry a broader set of options than lower-profile fixtures.</p>
+    <p>Pre-match markets allow review of odds and conditions before a selection is confirmed. Live markets update as the event develops. Odds in live betting reflect changes in score, time remaining, and other in-game factors. The interval available for placing a live bet is shorter than in pre-match betting. Both formats draw on the same account balance used for casino games. No separate sports wallet is maintained.</p>
+    </div></details>
+<details><summary>Market Types and Odds</summary><div>
+    <p>Markets commonly include match result, total goals or points, handicaps, and player or team propositions where applicable. The precise list varies by sport and by event. Odds are expressed in decimal format. Players should confirm the format in use before calculating potential returns. Odds are subject to change until a bet is accepted. A displayed price is not guaranteed until the wager is confirmed by the system.</p>
+    <p>Settlement of bets follows the rules published for each market. These rules define what constitutes a winning, losing, or void selection. Certain markets may be settled on official results, while others may use specific statistical criteria. Discrepancies between a player's expectation and the published settlement rule are resolved according to the latter. Reviewing the relevant rule before placing a wager reduces the possibility of misunderstanding.</p>
+    </div></details>
+<details><summary>Asian Handicap and Totals</summary><div>
+    <p>Asian Handicap markets remove the draw outcome by applying a goal or point advantage or deficit to one side. A negative handicap on the favourite requires that side to win by more than the specified margin. A positive handicap on the underdog succeeds if that side loses by less than the margin, draws, or wins. Whole-number handicaps can result in a push if the margin matches the line exactly.</p>
+    <p>Over and under markets set a threshold for total goals, points, or other statistics. Over 2.5 requires three or more goals. Under 2.5 requires two or fewer. The threshold varies by event and by sport. Settlement follows the published total for that market.</p>
+    </div></details>
+<details><summary>Access and Account Use</summary><div>
+    <p>The sportsbook is accessed through a standard browser. A66 does not offer a dedicated sports betting application for Android or iOS devices. Desktop and mobile browsers are supported. Functionality on mobile depends on screen size and connection quality. Live betting, in particular, benefits from a stable connection because odds and available markets can change rapidly.</p>
+    <p>Funds used for sports betting are drawn from the main A66 account balance. Winnings are credited to the same balance. Deposits and withdrawals follow the procedures applicable to the platform as a whole. Account verification requirements apply equally to sports and casino activity. Incomplete verification may affect the processing time of withdrawal requests.</p>
+    </div></details>
+<details><summary>Placing and Managing Bets</summary><div>
+    <p>To place a bet, the player selects an event, chooses a market, and enters a stake. The potential return is calculated from the odds in effect at the moment of submission. Confirmation is required before the bet is accepted. Once accepted, a bet is binding subject to the market rules. Cancellation after acceptance is generally not available. Players should verify the selection, odds, and stake amount on the confirmation screen.</p>
+    <p>Open bets can be reviewed in the account history. Settlement occurs after the relevant event or market condition is finalised. Delays in settlement can arise when official results are pending or when a market rule requires additional verification. Players may contact support if a settled bet appears inconsistent with the published rules.</p>
+    </div></details>
+<details><summary>Risk Considerations</summary><div>
+    <p>Sports betting involves the risk of losing the stake. Outcomes are determined by events outside the control of the platform or the player. Establishing a budget for betting activity and adhering to it limits potential loss. Increasing stakes in an attempt to recover earlier losses is a common pattern that can accelerate expenditure. The platform does not restrict the number of bets a player may place. Responsibility for volume and size of wagers rests with the account holder.</p>
+    </div></details>
+<details><summary>Pre-Match and Live Betting Differences</summary><div>
+    <p>Pre-match betting allows time for review of odds, team news, and market rules before a selection is confirmed. Odds are relatively stable in the period before an event, though they can shift in response to betting volume or new information. Live betting markets update continuously. The time available to place a live bet is limited, and odds can change between selection and confirmation. A stable connection is particularly important for live betting.</p>
+    <p>Cash-out functionality, where offered, allows a player to settle a bet before the event concludes. The cash-out value is calculated by the system and may be higher or lower than the original potential return. Cash-out is not available on all markets or at all times. The option, when present, is displayed alongside the open bet.</p>
+    </div></details>
+<details><summary>Settlement and Disputes</summary><div>
+    <p>Bets are settled according to the official result of the event or according to the specific criteria stated in the market rules. Dead-heat rules, abandonment policies, and the treatment of postponed events are defined in the general sportsbook rules. Players should familiarise themselves with these rules before placing bets on markets that may be affected.</p>
+    <p>If a settled bet appears inconsistent with the published rules, the player can contact support with the bet identifier and a description of the discrepancy. Support will review the settlement against the applicable rules. Adjustments, where warranted, are applied to the account balance. The review process may require time if the matter involves confirmation from an external source.</p>
+    </div></details>
+<details><summary>Responsible Betting</summary><div>
+    <p>The same responsible gaming tools available for casino play apply to sports betting. Deposit limits, session reminders, and self-exclusion affect the entire account. Players who wish to restrict sports betting specifically should contact support to discuss available options. Setting a budget for betting activity and avoiding the practice of increasing stakes to recover losses are practical measures that reduce risk.</p>
+    </div></details>
+<details><summary>Summary</summary><div>
+    <p>A66 sportsbook provides pre-match and live betting on football, basketball, badminton, and other events through a browser interface. No dedicated mobile application is required. Markets and odds differ by event, and settlement follows published rules. A single account balance is used for both sports and casino activity. Players are advised to confirm market rules and odds before placing bets, and to set expenditure limits in advance.</p></div></details></section><p class="foot-note">Play responsibly. 18+. Game availability and rules vary by provider.</p></main>
+ <dialog class="detail-modal" id="detail-football" aria-labelledby="title-football" aria-describedby="description-football"><div class="modal-top"><div><span class="eyebrow">A66 / PRE-MATCH / 01</span><h2 id="title-football">Football</h2></div><button type="button" class="modal-close" aria-label="Close Football details" autofocus>×</button></div><div class="modal-content"><p id="description-football">Football markets can cover match results, totals, handicaps and other event outcomes. Each market defines what counts, which period applies and how settlement works. A match-result market often covers regular time plus stoppage time, but the market rules are always decisive.</p><div class="facts"><span>Match-result selections</span><span>Totals and handicap formats</span><span>Settlement period matters</span></div><details open><summary>Match result</summary><p>Home, draw and away are common selections. Check whether the market covers regular time or a different match period.</p></details><details ><summary>Totals</summary><p>A totals market compares an event total with the stated line. Whole, half and split lines can settle differently.</p></details><details ><summary>Handicaps</summary><p>A handicap applies a stated adjustment for settlement. A whole-number line can allow a returned stake under the applicable rules.</p></details><div class="before-play"><h3>BEFORE YOU PLAY</h3><p>Read the settlement period, line and abandonment rules. Competition format alone does not tell you whether extra time counts.</p></div><a class="guide-link" onclick="this.closest('dialog').close()" href="sports-betting-guide.html">Read the sports betting guide →</a><div class="modal-actions"><a class="btn" href="https://a66.social/">Open A66 ↗</a><a class="outline-action" href="https://a66.social/register">Register ↗</a></div></div></dialog>
+<dialog class="detail-modal" id="detail-live-betting" aria-labelledby="title-live-betting" aria-describedby="description-live-betting"><div class="modal-top"><div><span class="eyebrow">A66 / IN-PLAY / 02</span><h2 id="title-live-betting">Live Betting</h2></div><button type="button" class="modal-close" aria-label="Close Live Betting details" autofocus>×</button></div><div class="modal-content"><p id="description-live-betting">In-play markets remain available during selected events. Prices and lines can change quickly, and markets may suspend around important moments. Streams, scoreboards and third-party feeds can be delayed relative to the operator’s data.</p><div class="facts"><span>Markets can suspend</span><span>Prices and lines may change</span><span>Data feeds can be delayed</span></div><details open><summary>Market suspensions</summary><p>A market can pause around a goal, review or other key incident. The interface may reopen with different prices or lines.</p></details><details ><summary>Confirming a selection</summary><p>Check the current price and line at the confirmation step. Availability and acceptance depend on the operator’s rules.</p></details><details ><summary>Data delays</summary><p>A visible stream or scoreboard may lag behind the event. It should not be treated as a guaranteed real-time feed.</p></details><div class="before-play"><h3>BEFORE YOU PLAY</h3><p>Avoid rushed decisions. Check the accepted bet details and set a session limit; a market reopening is not a reason to increase a stake.</p></div><a class="guide-link" onclick="this.closest('dialog').close()" href="football.html">Explore football and in-play rules →</a><div class="modal-actions"><a class="btn" href="https://a66.social/">Open A66 ↗</a><a class="outline-action" href="https://a66.social/register">Register ↗</a></div></div></dialog>
+<dialog class="detail-modal" id="detail-other-sports" aria-labelledby="title-other-sports" aria-describedby="description-other-sports"><div class="modal-top"><div><span class="eyebrow">A66 / MULTI-SPORT / 03</span><h2 id="title-other-sports">Other Sports</h2></div><button type="button" class="modal-close" aria-label="Close Other Sports details" autofocus>×</button></div><div class="modal-content"><p id="description-other-sports">Basketball, badminton, tennis and other sports use different scoring systems and settlement rules. Markets may cover the full event, a set, a period or a specific statistic. Availability changes by event and should be confirmed in the actual lobby.</p><div class="facts"><span>Sport-specific scoring</span><span>Event, set and period markets</span><span>Overtime and retirement rules vary</span></div><details open><summary>Basketball</summary><p>Check whether overtime is included and whether a market refers to the full game, a half or a quarter.</p></details><details ><summary>Badminton and tennis</summary><p>Markets can refer to match, set or game outcomes. Retirements and walkovers are handled under the operator’s published rules.</p></details><details ><summary>Other event formats</summary><p>A sport’s scoring structure affects what a total or handicap means. Read the exact market label and conditions before choosing.</p></details><div class="before-play"><h3>BEFORE YOU PLAY</h3><p>Review overtime, postponement and incomplete-event rules for the specific sport. The same market name can have different settlement details.</p></div><a class="guide-link" onclick="this.closest('dialog').close()" href="sports-betting-guide.html">Explore sports market basics →</a><div class="modal-actions"><a class="btn" href="https://a66.social/">Open A66 ↗</a><a class="outline-action" href="https://a66.social/register">Register ↗</a></div></div></dialog>
+<footer><div class="wrap">© 2019-2026 A66</div></footer>
+<script src="assets/a66-explore.js" defer></script>
+</body>
+</html>
